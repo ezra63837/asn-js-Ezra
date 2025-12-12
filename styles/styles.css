@@ -131,9 +131,8 @@ header .flex {
 }
 
 header .flex:hover {
-    color: black;
+    color: white;
     text-decoration: none;
-    background-color: #ffffff;
 }
 
 footer {
@@ -173,6 +172,10 @@ footer p {
 
 .index .fake-button {
    margin: auto;
+}
+
+.index .flex {
+    display: flex;
 }
 
 /************* bookings page *************/
