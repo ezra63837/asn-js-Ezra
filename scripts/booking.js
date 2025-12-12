@@ -102,47 +102,47 @@ function update() {
     let price = 0;
     if (days.includes("Monday")) {
         document.getElementById("monday").style.backgroundColor = "#E5AF42";
-        price += 40;
+        price += 20;
     }
     else {
         document.getElementById("monday").style.backgroundColor = "#ffffff";
     }
     if (days.includes("Tuesday")) {
         document.getElementById("tuesday").style.backgroundColor = "#E5AF42";
-        price += 40;
+        price += 20;
     }
     else {
         document.getElementById("tuesday").style.backgroundColor = "#ffffff";
     }
     if (days.includes("Wednesday")) {
         document.getElementById("wednesday").style.backgroundColor = "#E5AF42";
-        price += 40;
+        price += 20;
     }
     else {
         document.getElementById("wednesday").style.backgroundColor = "#ffffff";
     }
     if (days.includes("Thursday")) {
         document.getElementById("thursday").style.backgroundColor = "#E5AF42";
-        price += 40;
+        price += 20;;
     }
     else {
         document.getElementById("thursday").style.backgroundColor = "#ffffff";
     }
     if (days.includes("Friday")) {
         document.getElementById("friday").style.backgroundColor = "#E5AF42";
-        price += 40;
+        price += 20;
     }
     else {
         document.getElementById("friday").style.backgroundColor = "#ffffff";
     }
     if (days_type == "half") {
-        document.getElementById("half").style.backgroundColor = "#E5AF42";
-        document.getElementById("full").style.backgroundColor = "#ffffff";
-        price /= 2;
-    }
-    else {
         document.getElementById("half").style.backgroundColor = "#ffffff";
         document.getElementById("full").style.backgroundColor = "#E5AF42";
+        price *= 1.75;
+    }
+    else {
+        document.getElementById("half").style.backgroundColor = "#E5AF42";
+        document.getElementById("full").style.backgroundColor = "#ffffff";
     }
 	document.getElementById("calculated-cost").innerHTML = price;
 }
