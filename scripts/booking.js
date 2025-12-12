@@ -19,8 +19,8 @@ document.getElementById("wednesday").onclick = function() {toggleWednesday();};
 document.getElementById("thursday").onclick = function() {toggleThursday();};
 document.getElementById("friday").onclick = function() {toggleFriday();};
 
-document.getElementById("full").onclick = function() {toggleDaysType();};
-document.getElementById("half").onclick = function() {toggleDaysType();};
+document.getElementById("full").onclick = function() {toggleFull();};
+document.getElementById("half").onclick = function() {toggleHalf();};
 
 function toggleMonday() {
     if (days.includes("Monday")) {
@@ -73,15 +73,15 @@ function toggleFriday() {
     update();
 }
 
-function toggleDaysType() {
-    if (days_type == "half") {
-        days_type = "full";
-    }
-    else {
-        days_type = "half";
-    }
+function toggleHalf() {
+    days_type = "half";
     update();
 }
+function toggleFull() {
+    days_type = "full";
+    update();
+}
+
 
 
 /********* clear days *********/
@@ -135,7 +135,7 @@ function update() {
     else {
         document.getElementById("friday").style.backgroundColor = "#ffffff";
     }
-    if (days_type == "half") {
+    if (days_type == "full") {
         document.getElementById("half").style.backgroundColor = "#ffffff";
         document.getElementById("full").style.backgroundColor = "#E5AF42";
         price *= 1.75;
