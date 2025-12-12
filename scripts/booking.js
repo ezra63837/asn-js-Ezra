@@ -144,6 +144,7 @@ function update() {
         document.getElementById("half").style.backgroundColor = "#ffffff";
         document.getElementById("full").style.backgroundColor = "#E5AF42";
     }
+	document.getElementById("calculated-cost").innerHTML = price;
 }
 
 
