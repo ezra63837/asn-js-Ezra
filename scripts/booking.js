@@ -5,7 +5,7 @@
 
 const days = [];
 let days_type = "full";
-update();
+document.getElementById("full").style.backgroundColor = "#E5AF42";
 
 
 
