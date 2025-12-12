@@ -87,7 +87,7 @@ function toggleDaysType() {
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
-document.getElementById("clear-button").onclick = function() {resetDays()};
+document.getElementById("clear-button").onclick = function() {resetDays();};
 
 function resetDays() {
     days.length = 0;
@@ -144,7 +144,6 @@ function update() {
         document.getElementById("half").style.backgroundColor = "#ffffff";
         document.getElementById("full").style.backgroundColor = "#E5AF42";
     }
-    console.log(price)
 }
 
 
