@@ -123,7 +123,7 @@ function update() {
     }
     if (days.includes("Thursday")) {
         document.getElementById("thursday").style.backgroundColor = "#E5AF42";
-        price += 20;;
+        price += 20;
     }
     else {
         document.getElementById("thursday").style.backgroundColor = "#ffffff";
